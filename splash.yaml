@@ -1,0 +1,14 @@
+flutter_native_splash:
+  color: "#ffffff" # Color de fondo para el tema claro
+  color_dark: "#272727" # Color de fondo para el tema oscuro
+  image: assets/logos/Logo_mike_white_2.png # Imagen para el tema claro
+  image_dark: assets/logos/Logo_mike_black_2.png # Imagen para el tema oscuro
+
+android_12:
+  color: "#ffffff" # Color de fondo para Android 12 y superior (tema claro)
+  color_dark: "#272727" # Color de fondo para Android 12 y superior (tema oscuro)
+  image: assets/logos/Logo_mike_white_2.png # Imagen para Android 12 y superior (tema claro)
+  image_dark: assets/logos/Logo_mike_black_2.png # Imagen para Android 12 y superior (tema oscuro)
+
+web: false # Deshabilitar splash screen para web
+

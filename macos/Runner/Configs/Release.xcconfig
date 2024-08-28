@@ -1,0 +1,2 @@
+nclude "../../Flutter/Flutter-Release.xcconfig"
+nclude "Warnings.xcconfig"
