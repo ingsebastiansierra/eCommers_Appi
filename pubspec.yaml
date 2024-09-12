@@ -17,6 +17,8 @@ dependencies:
   intl: ^0.18.1
   logger: ^2.0.1
   url_launcher: ^6.1.12
+  carousel_slider: ^5.0.0
+
   smooth_page_indicator: ^1.1.0
 
   #Icons
@@ -45,6 +47,7 @@ flutter:
     - assets/images/on_boarding_images/
     - assets/images/animations/
     - assets/icons/categories/
+    - assets/images/banners/
 
 #------------------------------- LOCAL FONTS ------------------------#
 fonts:
