@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app_1/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:flutter_app_1/utils/helpers/helper_functions.dart';
 import 'package:get/get_connect/http/src/utils/utils.dart';
+import '../../../../common/widgets/custom_shapes/containers/circular_container.dart';
 import '../../../../common/widgets/custom_shapes/containers/primary_header_container.dart';
 import '../../../../common/widgets/custom_shapes/containers/search_container.dart';
 import '../../../../common/widgets/image_text_widgets/vertical_image_text.dart';
@@ -14,17 +15,18 @@ import '../../../../utils/constans/colors.dart';
 import '../../../../utils/constans/image_strings.dart';
 import '../../../../utils/constans/sizes.dart';
 import 'widgets/home_categories.dart';
+import 'widgets/promo_slider.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: SingleChildScrollView(
         child: Column(
           children: [
-            const TPrimaryHeaderContainer(
+            TPrimaryHeaderContainer(
               child: Column(children: [
                 //appbar
                 THomeAppBar(),
@@ -54,16 +56,14 @@ class HomeScreen extends StatelessWidget {
 
             /// TODO:  Body IMAGE CAROUSEL
             Padding(
-                padding: const EdgeInsets.all(TSizes.defaultSpace),
-                child: CarouselSlider(
-                    options: CarouselOptions(
-                      viewportFraction: 0.8,
-                    ),
-                    items: const [
-                      TRoundedImage(imageUrl: TImages.promoBanner1),
-                      TRoundedImage(imageUrl: TImages.promoBanner2),
-                      TRoundedImage(imageUrl: TImages.promoBanner3)
-                    ])),
+                padding: EdgeInsets.all(TSizes.defaultSpace),
+                child: TPromoSlider(banners: [
+                  TImages.promoBanner1,
+                  TImages.promoBanner2,
+                  TImages.promoBanner3
+                ])),
+
+              
           ],
         ),
       ),
