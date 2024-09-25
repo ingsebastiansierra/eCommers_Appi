@@ -4,6 +4,7 @@ import 'package:flutter_app_1/utils/helpers/helper_functions.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
+import 'features/shop/screens/store/store.dart';
 import 'utils/constans/colors.dart';
 
 class NavigationMenu extends StatelessWidget {
@@ -43,7 +44,7 @@ class NavigationController extends GetxController {
 
   final screens = [
     const HomeScreen(),
-    Container(color: Colors.purple),
+    const StoreScreen(),
     Container(color: Colors.orange),
     Container(color: Colors.blue)
   ];

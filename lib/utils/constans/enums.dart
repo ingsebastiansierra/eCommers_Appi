@@ -1,6 +1,6 @@
 //TODO: Lista de numeros
 
-enum TextSizes {Small, Medium, Large}
+enum TextSizes {Small, Medium, Large, labelLarge}
 
 enum OrderStatus {processing, shipped, delivered}
 

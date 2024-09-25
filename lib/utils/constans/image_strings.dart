@@ -71,7 +71,7 @@ class TImages {
   static const String productImage11 =
       'assets/images/products/Nike_air_jordan_1.png';
   static const String productImage12 =
-      'assets/images/products/Nike_air_max.png';
+      'assets/images/products/Reebok_Tenis_One.png';
   static const String productImage13 =
       'assets/images/products/Nike_deport_orange.png';
   static const String productImage14 =
@@ -103,7 +103,8 @@ class TImages {
       'assets/images/products/Reebok_Tenis_Running_Floatzig_Symmetros_Hombre.png';
   static const String productImage28 =
       'assets/images/products/Reebok_Tenis_Running_Floatzig_X1_Unisex.png';
-  static const String productImage29 = 'assets/images/products/Adidas_mujer.png';
+  static const String productImage29 =
+      'assets/images/products/Adidas_mujer.png';
   static const String productImage30 =
       'assets/images/products/Adidas_Tenis_Adistar_3.png';
 }

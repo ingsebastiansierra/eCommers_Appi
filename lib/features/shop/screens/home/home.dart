@@ -3,7 +3,6 @@ import 'dart:ffi';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_app_1/common/widgets/products/product_cards/product_cards_vertical.dart';
-import 'package:flutter_app_1/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:flutter_app_1/utils/helpers/helper_functions.dart';
 import 'package:get/get_connect/http/src/utils/utils.dart';
 import '../../../../common/widgets/custom_shapes/containers/circular_container.dart';
@@ -16,6 +15,7 @@ import '../../../../common/widgets/texts/section_heading.dart';
 import '../../../../utils/constans/colors.dart';
 import '../../../../utils/constans/image_strings.dart';
 import '../../../../utils/constans/sizes.dart';
+import 'widgets/home_appbar.dart';
 import 'widgets/home_categories.dart';
 import 'widgets/promo_slider.dart';
 
@@ -57,14 +57,30 @@ class HomeScreen extends StatelessWidget {
             ),
 
             /// TODO:  Body IMAGE CAROUSEL
-            const Padding(
-                padding: EdgeInsets.all(TSizes.defaultSpace),
-                child: TPromoSlider(banners: [
-                  TImages.promoBanner1,
-                  TImages.promoBanner2,
-                  TImages.promoBanner3
-                ])),
-            TGridLayout( itemCount: 4, itemBuilder: (_, index)=>const TProductCardVertical(),),
+            Padding(
+              padding: const EdgeInsets.all(TSizes.defaultSpace),
+              child: Column(
+                children: [
+                  /// TODO: Slider
+                  const TPromoSlider(banners: [
+                    TImages.promoBanner1,
+                    TImages.promoBanner2,
+                    TImages.promoBanner3
+                  ]),
+                  const SizedBox(height: TSizes.spaceBtwSections),
+
+                  TSectionHeading(
+                    title: 'Popular Products',
+                    onPressed: () {},
+                  ),
+                  const SizedBox(height: TSizes.spaceBtwItems),
+                  TGridLayout(
+                    itemCount: 4,
+                    itemBuilder: (_, index) => const TProductCardVertical(),
+                  )
+                ],
+              ),
+            ),
           ],
         ),
       ),

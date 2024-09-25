@@ -8,8 +8,8 @@ class TSectionHeading extends StatelessWidget {
     this.textColor,
     this.buttonTitle = 'View All',
     required this.title,
-    this.showActionButton = false,
-  });
+    this.showActionButton = true,
+  }); 
 
   final Color? textColor;
   final bool showActionButton;
@@ -19,6 +19,7 @@ class TSectionHeading extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Text(
           title,
@@ -30,7 +31,7 @@ class TSectionHeading extends StatelessWidget {
           overflow: TextOverflow.ellipsis,
         ),
         if (showActionButton)
-          TextButton(onPressed: () {}, child: Text(buttonTitle))
+          TextButton(onPressed: onPressed, child: Text(buttonTitle))
       ],
     );
   }
