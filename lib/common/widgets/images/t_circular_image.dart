@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../../../utils/constans/colors.dart';
-import '../../../utils/constans/image_strings.dart';
 import '../../../utils/constans/sizes.dart';
 import '../../../utils/helpers/helper_functions.dart';
 

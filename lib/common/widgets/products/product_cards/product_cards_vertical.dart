@@ -6,7 +6,6 @@ import 'package:flutter_app_1/utils/helpers/helper_functions.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../../../utils/constans/colors.dart';
-import '../../../../utils/constans/enums.dart';
 import '../../../../utils/constans/sizes.dart';
 import '../../../styles/shadow.dart';
 import '../../custom_shapes/containers/rounded_container.dart';

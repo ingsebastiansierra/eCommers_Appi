@@ -23,7 +23,7 @@ class SignupScreen extends StatelessWidget {
                       style: Theme.of(context).textTheme.headlineMedium),
                   const SizedBox(height: TSizes.spaceBtwSections),
 
-                  TSignupForm(),
+                  const TSignupForm(),
                   const SizedBox(height: TSizes.spaceBtwSections),
                   //TODO: DIVIDER
                   TFormDivider(dividerText: TTexts.orSignInWith.capitalize!),
