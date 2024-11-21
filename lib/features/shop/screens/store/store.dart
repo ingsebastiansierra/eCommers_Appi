@@ -6,11 +6,15 @@ import 'package:flutter_app_1/common/widgets/custom_shapes/containers/search_con
 import 'package:flutter_app_1/common/widgets/products/cart/cart_menu_icon.dart';
 import 'package:flutter_app_1/utils/constans/colors.dart';
 import 'package:flutter_app_1/utils/helpers/helper_functions.dart';
+import 'package:get/get_connect/http/src/utils/utils.dart';
 
 import '../../../../common/widgets/brands/brand_card.dart';
+import '../../../../common/widgets/brands/brand_show_case.dart';
 import '../../../../common/widgets/layouts/grid_layouts.dart';
 import '../../../../common/widgets/texts/section_heading.dart';
+import '../../../../utils/constans/image_strings.dart';
 import '../../../../utils/constans/sizes.dart';
+import 'widgets/category_tab.dart';
 
 class StoreScreen extends StatelessWidget {
   const StoreScreen({super.key});
@@ -55,7 +59,8 @@ class StoreScreen extends StatelessWidget {
                         padding: EdgeInsets.zero,
                       ),
                       const SizedBox(height: TSizes.spaceBtwSections),
-                      const TSectionHeading(title: 'Featured Brands'),
+                      TSectionHeading(
+                          title: 'Featured Brands', onPressed: () {}),
                       const SizedBox(
                         height: TSizes.spaceBtwItems / 1.5,
                       ),
@@ -87,42 +92,14 @@ class StoreScreen extends StatelessWidget {
             // Asegúrate de que haya 5 widgets para las 5 tabs
             children: [
               // Tab 1: Sports
-              Padding(
-                padding: EdgeInsets.all(TSizes.defaultSpace),
-                child: Column(
-                  children: [
-                    TRoundedContainer(
-                      showBorder: true,
-                      borderColor: TColors.darkGrey,
-                      backgroundColor: Colors.transparent,
-                      margin: EdgeInsets.only(bottom: TSizes.spaceBtwItems),
-                      child: Column(
-                        children: [TBrandCard(showBorder: false)],
-                      ),
-                    ),
-                  ],
-                ),
-              ),
+              TCategoryTab(),
+              TCategoryTab(),
+              TCategoryTab(),
+              TCategoryTab(),
+              TCategoryTab(),
+              
               // Tab 2: Furniture
-              Padding(
-                padding: EdgeInsets.all(TSizes.defaultSpace),
-                child: Center(child: Text('Furniture Section')),
-              ),
-              // Tab 3: Electronics
-              Padding(
-                padding: EdgeInsets.all(TSizes.defaultSpace),
-                child: Center(child: Text('Electronics Section')),
-              ),
-              // Tab 4: Clothes
-              Padding(
-                padding: EdgeInsets.all(TSizes.defaultSpace),
-                child: Center(child: Text('Clothes Section')),
-              ),
-              // Tab 5: Cosmetics
-              Padding(
-                padding: EdgeInsets.all(TSizes.defaultSpace),
-                child: Center(child: Text('Cosmetics Section')),
-              ),
+             
             ],
           ),
         ),
