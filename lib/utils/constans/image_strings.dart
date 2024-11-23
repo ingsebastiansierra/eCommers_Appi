@@ -9,6 +9,8 @@ class TImages {
   static const String google = 'assets/logos/google.png';
   static const String facebook = 'assets/logos/facebook.png';
 
+  static const String user = 'assets/images/user/user.jpg';
+
   // --- OnBoarding Images
   static const String onBoardingImage1 =
       'assets/images/on_boarding_images/sammy-line-delivery.gif';

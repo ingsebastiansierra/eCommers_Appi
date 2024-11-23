@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_app_1/common/widgets/products/product_cards/product_cards_vertical.dart';
 import '../../../../common/widgets/custom_shapes/containers/primary_header_container.dart';
@@ -44,7 +43,9 @@ class HomeScreen extends StatelessWidget {
                       THomeCategories(),
                     ],
                   ),
-                )
+                ),
+
+                SizedBox(height: TSizes.spaceBtwSections),
               ]),
             ),
 

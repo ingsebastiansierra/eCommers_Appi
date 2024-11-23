@@ -5,6 +5,7 @@ import 'package:flutter_app_1/utils/helpers/helper_functions.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
+import 'features/authentication/screens/settings/settings.dart';
 import 'features/shop/screens/store/store.dart';
 import 'utils/constans/colors.dart';
 
@@ -47,6 +48,6 @@ class NavigationController extends GetxController {
     const HomeScreen(),
     const StoreScreen(),
     const FavoriteScreen(),
-    Container(color: Colors.blue)
+    const SettingsScreen()
   ];
 }

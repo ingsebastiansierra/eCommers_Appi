@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app_1/common/widgets/appbar/appbar.dart';
-import 'package:flutter_app_1/common/widgets/custom_shapes/containers/circular_container.dart';
 import 'package:flutter_app_1/common/widgets/icons/t_circular_icon.dart';
 import 'package:flutter_app_1/common/widgets/layouts/grid_layouts.dart';
 import 'package:flutter_app_1/common/widgets/products/product_cards/product_cards_vertical.dart';

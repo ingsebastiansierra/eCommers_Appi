@@ -35,12 +35,17 @@ class TCircularImagen extends StatelessWidget {
             (THelperFunctions.isDarkMode(context)
                 ? TColors.black
                 : TColors.white),
-        borderRadius: BorderRadius.circular(100),
+        shape: BoxShape.circle, // Asegura que sea circular
       ),
-      child: Image(
+      child: ClipOval( // Recorta el contenido para que sea circular
+        child: Image(
           fit: fit,
-          image: isNetworkImage ? NetworkImage(image) : AssetImage(image) as ImageProvider,
-          color: overlayColor),
+          image: isNetworkImage
+              ? NetworkImage(image)
+              : AssetImage(image) as ImageProvider,
+          color: overlayColor,
+        ),
+      ),
     );
   }
 }
